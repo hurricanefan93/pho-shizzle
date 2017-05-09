@@ -8,7 +8,7 @@ html {
 
 .background {
   height: 100vh;
-  background-image: url('../images/photastic.jpg');
+  background-image: url('../images/phoreal.jpg');
   background-position: center;
   background-size: cover;
   z-index: -1;
@@ -17,7 +17,7 @@ html {
   left: 0;
   right: 0;
   top: 0;
-  filter: blur(0.5px);
+  filter: blur(0.8px);
 }
 
 .App {
@@ -55,11 +55,11 @@ header {
   }
 
   a:hover {
-    color: lightgreen;
+    color: olivedrab;
   }
 
   a:focus {
-    color: lightgreen;
+    color: olivedrab;
   }
 }
 
@@ -72,6 +72,7 @@ ul.navlinks {
     text-decoration: none;
     margin-right: 8px;
     color: white;
+    text-shadow: 1.5px 1.5px black;
   }
 
   a:link {
@@ -83,23 +84,54 @@ ul.navlinks {
   }
 
   a:hover {
-    color: lightgreen;
+    color: olivedrab;
   }
 
   a:active {
-    color: lightgreen;
+    color: olivedrab;
   }
 
   a:focus {
-    color: lightgreen;
+    color: olivedrab;
   }
 }
 
 .Menu {
-  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: 0;
 
-  ul {
-    list-style: circle;
+  h2 {
+    margin-top: 40px;
+    color: white;
+    font-size: 40px;
+  }
+
+  section.categories {
+    width: 100%;
+    height: 500px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(52, 53, 59, 0.7);
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      list-style: none;
+    }
+
+    a {
+      color: white;
+      text-shadow: 1.5px 1.5px rgb(31, 31, 31);
+      text-decoration: none;
+    }
   }
 }
 
@@ -109,6 +141,7 @@ footer {
 }
 
 body {
+  margin: 0;
   color: white;
   font: $base-text-size / 1 $base-font-family;
 }
