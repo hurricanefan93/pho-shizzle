@@ -1,5 +1,4 @@
 @import 'utility';
-
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
@@ -7,7 +6,109 @@ html {
   @include full-height;
 }
 
-body {
+.background {
+  height: 100vh;
+  background-image: url('../images/photastic.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
   margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  filter: blur(0.5px);
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgb(52, 53, 59);
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid white;
+  z-index: 100;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: lightgreen;
+  }
+
+  a:focus {
+    color: lightgreen;
+  }
+}
+
+ul.navlinks {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: white;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: lightgreen;
+  }
+
+  a:active {
+    color: lightgreen;
+  }
+
+  a:focus {
+    color: lightgreen;
+  }
+}
+
+.Menu {
+  color: white;
+
+  ul {
+    list-style: circle;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  color: white;
   font: $base-text-size / 1 $base-font-family;
 }
