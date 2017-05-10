@@ -7,7 +7,7 @@ class PageLayout extends Component {
         <div className='topnav'>
           <h1><NavLink to='/'>Pho Shizzle</NavLink></h1>
           <ul className='navlinks'>
-            <li><NavLink to='/'>Home</NavLink></li>
+            {/* <li><NavLink to='/'>Home</NavLink></li> */}
             <li><NavLink to='/menu'>Menu</NavLink></li>
             <li><NavLink to='/contactus'>Contact Us</NavLink></li>
             <li><NavLink to='/locations'>Locations</NavLink></li>

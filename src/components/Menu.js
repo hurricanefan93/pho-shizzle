@@ -80,8 +80,8 @@ class MenuSection extends React.Component {
           {this.state.items.map((item, i) =>
             <tr key={i}>
               <th>{item.name}</th>
-              <td>{item.description}</td>
-              <td>${item.price / 100}</td>
+              <td className='description'>{item.description}</td>
+              <td className='price'>${item.price / 100}</td>
             </tr>
         )}
         </tbody>
